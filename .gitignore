@@ -1,0 +1,3 @@
+.mypy_*
+ .venv
+*.sqlite3
