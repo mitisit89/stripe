@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-z3$&8pjy-y&)h$b2rmp(_^nt)8+)_p55%b1*fhn9h0$n74$*y_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 STRIPE_SECRET = os.getenv("STRIPE_SECRET")
