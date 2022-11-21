@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    command:
+      python core/manage.py runserver localhost:8000
+    ports:
+      - '8000:8000'
