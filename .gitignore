@@ -3,4 +3,6 @@
 *.sqlite3
 __pycache__/
  *.pyc
-
+migrations/
+.env
+.md

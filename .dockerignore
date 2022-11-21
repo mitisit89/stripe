@@ -1,0 +1,8 @@
+ .venv
+ .git
+ __pycache__/
+ *.pyc
+.env.exemple 
+*.md
+*.sqlite3
+migrations/
