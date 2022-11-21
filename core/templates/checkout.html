@@ -18,11 +18,10 @@
       var buyButton = document.getElementById('buy-button');
       var item_num=document.URL.slice(-1);
         // Redirect to Stripe Session Checkout
-          console.log(item_num)
 
       buyButton.addEventListener('click', function() {
         // Create a new Checkout Session using the server-side endpoint 
-          fetch("/buy/1", {method: 'GET'})
+          fetch(`/buy/{item_num}`, {method: 'GET'})
         .then(response => response.json())
         .then(session => stripe.redirectToCheckout({ sessionId: session.id }))
       });
